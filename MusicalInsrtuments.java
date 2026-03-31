@@ -1,4 +1,4 @@
- class Musical_Instruments {
+ class MusicalInstruments {
 
     // 5 Static Variables 
     static String name = "Guitar";
@@ -13,7 +13,7 @@
         int quantity = 10;
         double price = 55000.75;
         char grade = 'B';
-        boolean isElectric = false;jja
+        boolean isElectric = false;
 
         System.out.println("Local Variables:");
         System.out.println("Name: " + name);

@@ -1,34 +1,39 @@
-class Library {
+ class Library{
+      public static void main(String []args){
+int bookId;//declaration
+   System.out.println("i am printing declaration part of bookId:");
+ bookId = 5005;//initilization
+     System.out.println("i am printing initilization part of bookId:"+bookId);
+String bookName;//declaration
+   System.out.println("i am printing declaration part of bookName:");
 
-  public static void main(String []args){
+  bookName = "english";//initilization
+       System.out.println("i am printing initilization part of bookName:" +bookName);
 
-    System.out.println("Are you open today");
-    getLibrary();
-  
-    System.out.println("How many books were issued");
-    int morningIssued = 45;
-    int eveningIssued = 30;
-    boolean isOpenOnWeekend = true;
-    tosay(morningIssued, eveningIssued, isOpenOnWeekend);
+double price;//declaration
+   System.out.println("i am printing declaration part of price:");
 
-    double fineAmount = getYourFineAmount();
-    System.out.println(fineAmount);
-    System.out.println("Hi Library what is your fine amount");
-  }
-  static void getLibrary(){
-    System.out.println("Yes I am open today");
-  }
+  price = 450;//initilization
+       System.out.println("i am printing initilization part of price:" +price);
+char section;//declaration
+   System.out.println("i am printing declaration part of section:");
 
-  static void tosay(int morningIssued, int eveningIssued, boolean isOpenOnWeekend){
-    System.out.println("Ok I will tell you");
-    int totalIssued = morningIssued + eveningIssued;
-    System.out.println(totalIssued);
-    System.out.println(isOpenOnWeekend);
+  section = 'A';//initilization
+       System.out.println("i am printing initilization part of section:"+section);
+
+boolean isAvailable;//declaration
+   System.out.println("i am printing declaration part of isAvailable:");
+
+   isAvailable = true;//initilization
+        System.out.println("i am printing initilization part of isAvailable:" +isAvailable);
+
+long isbnNumber;//declaration
+   System.out.println("i am printing declaration part of isbnNumber:");
+
+  isbnNumber = 9876543210L;//initilization
+       System.out.println("i am printing initilization part of isbnNumber:" +isbnNumber);
+
+
+
+ }
   }
-  static double getYourFineAmount(){
-    System.out.println("Wait a minute");
-    double fineAmount = 250.75;
-    System.out.println("Now I know my fine amount");
-    return fineAmount;
-  }
-}
