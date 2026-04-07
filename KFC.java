@@ -1,57 +1,57 @@
-class Zomato {
+class KFC {
 
-    static int checkFood(String item) {
+    static int checkItem(String item) {
 
         int price = 0;
 
-        if (item == "biryani") {
+        if (item == "chicken bucket") {
             System.out.println("item is: " + item);
-            price = 250;
+            price = 600;
             return price;
 
-        } else if (item == "pizza") {
+        } else if (item == "zinger burger") {
             System.out.println("item is: " + item);
-            price = 300;
+            price = 200;
             return price;
 
-        } else if (item == "burger") {
+        } else if (item == "popcorn chicken") {
             System.out.println("item is: " + item);
-            price = 120;
+            price = 180;
             return price;
 
-        } else if (item == "noodles") {
-            System.out.println("item is: " + item);
-            price = 150;
-            return price;
-
-        } else if (item == "pasta") {
+        } else if (item == "chicken wings") {
             System.out.println("item is: " + item);
             price = 220;
             return price;
 
-        } else if (item == "sandwich") {
+        } else if (item == "chicken strips") {
             System.out.println("item is: " + item);
-            price = 100;
+            price = 250;
             return price;
 
         } else if (item == "fries") {
             System.out.println("item is: " + item);
-            price = 90;
+            price = 100;
             return price;
 
-        } else if (item == "shawarma") {
+        } else if (item == "coke") {
             System.out.println("item is: " + item);
-            price = 140;
+            price = 80;
             return price;
 
-        } else if (item == "momos") {
+        } else if (item == "pepsi") {
             System.out.println("item is: " + item);
-            price = 110;
+            price = 80;
             return price;
 
         } else if (item == "icecream") {
             System.out.println("item is: " + item);
-            price = 80;
+            price = 90;
+            return price;
+
+        } else if (item == "brownie") {
+            System.out.println("item is: " + item);
+            price = 120;
             return price;
 
         } else {
@@ -60,18 +60,12 @@ class Zomato {
         }
     }
 
-    static int calculateBill(String item, int price, int quantity) {
+    static int totalAmount(String item, int price, int qty) {
 
-        int total = 0;
-
-        if (item == "biryani") {
-            total = price * quantity;
-            return total;
-
-        } else if (item == "pizza") {
-            total = price * quantity;
-            return total;
-
+        if (item == "chicken bucket") {
+            return price * qty;
+        } else if (item == "zinger burger") {
+            return price * qty;
         } else {
             return 0;
         }

@@ -1,27 +1,22 @@
-class Zomato {
+class DoorDash {
 
     static int checkFood(String item) {
 
         int price = 0;
 
-        if (item == "biryani") {
-            System.out.println("item is: " + item);
-            price = 250;
-            return price;
-
-        } else if (item == "pizza") {
+        if (item == "pizza") {
             System.out.println("item is: " + item);
             price = 300;
             return price;
 
         } else if (item == "burger") {
             System.out.println("item is: " + item);
-            price = 120;
+            price = 150;
             return price;
 
-        } else if (item == "noodles") {
+        } else if (item == "biryani") {
             System.out.println("item is: " + item);
-            price = 150;
+            price = 260;
             return price;
 
         } else if (item == "pasta") {
@@ -29,14 +24,14 @@ class Zomato {
             price = 220;
             return price;
 
-        } else if (item == "sandwich") {
+        } else if (item == "noodles") {
             System.out.println("item is: " + item);
-            price = 100;
+            price = 170;
             return price;
 
         } else if (item == "fries") {
             System.out.println("item is: " + item);
-            price = 90;
+            price = 100;
             return price;
 
         } else if (item == "shawarma") {
@@ -44,14 +39,19 @@ class Zomato {
             price = 140;
             return price;
 
-        } else if (item == "momos") {
+        } else if (item == "sandwich") {
             System.out.println("item is: " + item);
-            price = 110;
+            price = 120;
+            return price;
+
+        } else if (item == "cake") {
+            System.out.println("item is: " + item);
+            price = 250;
             return price;
 
         } else if (item == "icecream") {
             System.out.println("item is: " + item);
-            price = 80;
+            price = 90;
             return price;
 
         } else {
@@ -60,18 +60,12 @@ class Zomato {
         }
     }
 
-    static int calculateBill(String item, int price, int quantity) {
+    static int calculateBill(String item, int price, int qty) {
 
-        int total = 0;
-
-        if (item == "biryani") {
-            total = price * quantity;
-            return total;
-
-        } else if (item == "pizza") {
-            total = price * quantity;
-            return total;
-
+        if (item == "pizza") {
+            return price * qty;
+        } else if (item == "burger") {
+            return price * qty;
         } else {
             return 0;
         }

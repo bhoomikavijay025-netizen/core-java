@@ -1,10 +1,11 @@
-class PizzaHutRunner {
+class McDonaldsRunner {
+
     public static void main(String[] args) {
 
-        int price = PizzaHut.checkPizza("margherita");
+        int price = McDonalds.checkItem("mcChicken");
         System.out.println("Price: " + price);
 
-        int total = PizzaHut.totalBill("margherita", price, 5);
+        int total = McDonalds.totalPrice("mcChicken", price, 2);
         System.out.println("Total: " + total);
     }
 }

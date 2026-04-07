@@ -1,57 +1,57 @@
-class Zomato {
+class Dominos {
 
-    static int checkFood(String item) {
+    static int checkPizza(String item) {
 
         int price = 0;
 
-        if (item == "biryani") {
+        if (item == "veg pizza") {
             System.out.println("item is: " + item);
-            price = 250;
+            price = 200;
             return price;
 
-        } else if (item == "pizza") {
+        } else if (item == "farmhouse") {
             System.out.println("item is: " + item);
-            price = 300;
+            price = 350;
             return price;
 
-        } else if (item == "burger") {
+        } else if (item == "peppy paneer") {
             System.out.println("item is: " + item);
-            price = 120;
+            price = 400;
             return price;
 
-        } else if (item == "noodles") {
+        } else if (item == "veggie deluxe") {
             System.out.println("item is: " + item);
-            price = 150;
+            price = 450;
             return price;
 
-        } else if (item == "pasta") {
+        } else if (item == "cheese burst") {
             System.out.println("item is: " + item);
-            price = 220;
+            price = 500;
             return price;
 
-        } else if (item == "sandwich") {
+        } else if (item == "chicken dominator") {
             System.out.println("item is: " + item);
-            price = 100;
+            price = 600;
             return price;
 
-        } else if (item == "fries") {
+        } else if (item == "pepper bbq chicken") {
             System.out.println("item is: " + item);
-            price = 90;
+            price = 550;
             return price;
 
-        } else if (item == "shawarma") {
+        } else if (item == "paneer makhani") {
             System.out.println("item is: " + item);
-            price = 140;
+            price = 480;
             return price;
 
-        } else if (item == "momos") {
+        } else if (item == "mexican green wave") {
             System.out.println("item is: " + item);
-            price = 110;
+            price = 420;
             return price;
 
-        } else if (item == "icecream") {
+        } else if (item == "indian tandoori") {
             System.out.println("item is: " + item);
-            price = 80;
+            price = 530;
             return price;
 
         } else {
@@ -64,11 +64,11 @@ class Zomato {
 
         int total = 0;
 
-        if (item == "biryani") {
+        if (item == "veg pizza") {
             total = price * quantity;
             return total;
 
-        } else if (item == "pizza") {
+        } else if (item == "farmhouse") {
             total = price * quantity;
             return total;
 

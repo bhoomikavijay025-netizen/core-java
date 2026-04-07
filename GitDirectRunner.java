@@ -1,11 +1,11 @@
-class ZomatoRunner {
+class GitDirectRunner {
 
     public static void main(String[] args) {
 
-        int price = Zomato.checkFood("biryani");
+        int price = GitDirect.checkItem("mobile");
         System.out.println("Single Price: " + price);
 
-        int total = Zomato.calculateBill("biryani", price, 2);
+        int total = GitDirect.totalAmount("mobile", price, 2);
         System.out.println("Total Price: " + total);
     }
 }
